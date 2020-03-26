@@ -136,18 +136,28 @@
                     <div class="row">
 
                         <!-- Area Chart -->
-                        <div class="col-xl-7 col-lg-6" id="subscribe">
+                        <div class="col-xl-7 col-lg-6" id="subscribe" style="height: auto;">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Get free notification</h6>
+
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">More options</div>
+                      <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSeP9BlTG4ykVFedTqPUNfz2pyKfo4TOy5R0Igf6J2Yl_bCkMQ/viewform?usp=sf_link" target="_blank">Open form externally</a>
+                    </div>
+                  </div>
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeP9BlTG4ykVFedTqPUNfz2pyKfo4TOy5R0Igf6J2Yl_bCkMQ/viewform?embedded=true" width="100%" height="557" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <div class="card-body" s>
+                                    <!-- <div class="chart-area"> -->
+                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeP9BlTG4ykVFedTqPUNfz2pyKfo4TOy5R0Igf6J2Yl_bCkMQ/viewform?embedded=true" style="width: 100%;height: 400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                                         <!-- <canvas id="myAreaChart"></canvas> -->
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
                         </div>
@@ -188,7 +198,7 @@
                                 </div>
                                     <!-- </div> -->
                                     <div class="mt-4 text-center small">
-                                        <span class="mr-2"><a href="https://twitter.com/i/trends">See more trends in Nigeria &gt;&gt;</a></span>
+                                        <span class="mr-2"><a href="https://twitter.com/i/trends" target="_blank">See more trends in Nigeria &gt;&gt;</a></span>
                                     </div>
                                 </div>
                             </div>
