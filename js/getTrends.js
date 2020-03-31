@@ -1,10 +1,10 @@
-let allTrends = "hello"
 var getTrends = new Vue({  
   el: '#trends',
   data () {
     return {
     	API_URL: 'http://localhost:5000/api/v1/trends',
-    	trends: null,
+      trends: null,
+    	trendTOpics: {},
     	loading: true,
     	errored: false,
     }
@@ -13,9 +13,9 @@ var getTrends = new Vue({
     axios
       .get(this.API_URL)
       .then(response => {
-      	// console.log(allTrends)
+      	// console.log(Object.keys(response.data.data))
         this.trends = response.data.data
-        updateAllTrends(response.data.data)
+        this.trendTOpics = Object.keys(response.data.data)
         // this.errored =  response.data.data.errorExist
       })
       .catch(error => {
@@ -51,6 +51,3 @@ var getUsers = new Vue({
       .finally(() => this.loading = false)
   }
 });
-function updateAllTrends(data) {
-  allTrends = data
-}

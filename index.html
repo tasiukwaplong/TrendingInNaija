@@ -188,9 +188,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr v-for="trend in trends">
-                                                <td ><a :href="trend.url" target="_blank">{{trend.topic}}</a></td>
-                                                <td>{{trend.tweet_volume}}</td>
+                                            <tr v-for="trend in trendTOpics">
+                                                <td ><a :href="trends[trend].url" target="_blank">{{trend}}</a></td>
+                                                <td>{{trends[trend].tweet_volume}}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -296,6 +296,11 @@
     </script>
     <!-- Page level custom scripts -->
     <script src="js/datatables-demo.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
 </body>
 
