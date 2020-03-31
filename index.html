@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Get SMS alerts on whats trending in Naija">
     <meta name="author" content="Tasiu Kwaplong (TK) | @tasiukwaplong">
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script> -->
-    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="js/vue.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script type="text/javascript" src="js/axios.min.js"></script>
     <title>TrendingInNaija</title>
 
@@ -288,19 +289,15 @@
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        setTimeout(function() {
+           $(document).ready(function () {
             $('#example').DataTable({
               "order":[[1, "desc"]]
             });
-        });
-    </script>
-    <!-- Page level custom scripts -->
-    <script src="js/datatables-demo.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+        });            
+        }, 1500);
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    </script>
 
 </body>
 
