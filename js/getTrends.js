@@ -1,9 +1,11 @@
+//      API_URL: 'https://trendinginnaija.herokuapp.com/api/v1/getuserlength',
 //http://localhost:5000/api/v1/trends
+//https://trending-in-naija.uc.r.appspot.com/api/v1/trends
 var getTrends = new Vue({  
   el: '#trends',
   data () {
     return {
-    	API_URL: 'https://trendinginnaija.herokuapp.com/api/v1/trends',
+    	API_URL: 'https://trending-in-naija.uc.r.appspot.com/api/v1/trends',
       trends: null,
     	trendTOpics: {},
     	loading: true,
@@ -32,7 +34,7 @@ var getUsers = new Vue({
   el: '#users',
   data () {
     return {
-      API_URL: 'https://trendinginnaija.herokuapp.com/api/v1/getuserlength',
+      API_URL: 'https://trending-in-naija.uc.r.appspot.com/api/v1/getuserlength',
       users: null
     }
   },
