@@ -5,7 +5,7 @@ var getTrends = new Vue({
   el: '#trends',
   data () {
     return {
-    	API_URL: 'https://trending-in-naija.uc.r.appspot.com/api/v1/trends',
+    	API_URL: 'https://trendinginnaija.herokuapp.com/api/v1/trends',
       trends: null,
     	trendTOpics: {},
     	loading: true,
